@@ -1,0 +1,84 @@
+ScreenManager:
+  KivyMainScreen:
+    name: "main"
+  ResultScreen:
+    name: "result"
+
+<KivyMainScreen>:
+  BoxLayout:
+    orientation: 'vertical'
+    spacing: 10
+    padding: 20
+
+    Spinner:
+      id: top_spinner
+      text: 'Select Language'
+      values: ['English', 'Hindi', 'Marathi']
+      size_hint: None, None
+      size: 200, 40
+      pos_hint: {'center_x': 0.5}
+
+    Image:
+      id: image_panel
+      size_hint: 1, 0.5
+      fit_mode: 'contain'
+      on_touch_down: root.freeze_frame(*args)
+
+    Label:
+      id: model_select_label
+      text: root.model_select_text
+      font_size: 20
+      size_hint: 1, None
+      height: 30
+
+    Spinner:
+      id: model_spinner
+      text: 'EfficientNetB0'
+      values: ['EfficientNetB0', 'ResNet50', 'MobileNetV2']
+      size_hint: None, None
+      size: 250, 40
+      pos_hint: {'center_x': 0.5}
+
+    BoxLayout:
+      size_hint: 1, None
+      height: 50
+      spacing: 10
+      Button:
+        id: start_btn
+        text: "Start Camera"
+        on_press: root.toggle_camera(self)
+
+    BoxLayout:
+      size_hint: 1, None
+      height: 50
+      spacing: 10
+      Button:
+        id: select_btn
+        on_press: root.select_image(self)
+      Button:
+        id: predict_btn
+        on_press: root.predict_image(self)
+
+<ResultScreen>:
+  BoxLayout:
+    orientation: 'vertical'
+    spacing: 20
+    padding: 20
+
+    Label:
+      id: prediction_label
+      text: ""
+      font_size: 20
+      size_hint: 1, None
+      height: 40
+
+    Image:
+      id: result_image_panel
+      size_hint_y: 0.8
+      fit_mode: 'contain'
+
+    Button:
+      text: "Back to Main Screen"
+      size_hint: 1, None
+      height: 50
+      on_press: root.go_back(self)

@@ -1,0 +1,38 @@
+# Virtual environments
+venv/
+kivy_env/
+
+# Python cache
+__pycache__/
+*/__pycache__/
+
+# Models
+Models/
+
+# Fonts
+fonts/
+
+# Other folder
+Other/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Python compiled
+*.pyc
+*.pyo
+*.pyd
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Env files
+.env
+
+# IDE
+.vscode/
+.idea/
