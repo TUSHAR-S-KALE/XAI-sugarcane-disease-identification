@@ -212,20 +212,20 @@ end
 
 ### Desktop Application (Tkinter)
 
-**Home Screen**: Input image, model selection
+**Home Screen**
 ![Desktop Home](Assets/Figures/Desktop_homescreen.png)
 
-**Result Screen**: Prediction + Grad-CAM
+**Result Screen**
 ![Desktop Result](Assets/Figures/Desktop_result_screen.png)
 
 ---
 
 ### Mobile Application (Kivy)
 
-**Home Screen**: Input image, model selection
+**Home Screen**
 ![Mobile Home](Assets/Figures/Mobile_homescreen.png)
 
-**Result Screen**: Prediction + Grad-CAM
+**Result Screen**
 ![Mobile Result](Assets/Figures/Mobile_result_screen.png)
 
 ---
