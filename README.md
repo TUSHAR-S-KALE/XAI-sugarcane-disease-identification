@@ -1,4 +1,4 @@
-# XAI-Driven Sugarcane Leaf Disease Detection
+# XAI-Driven Deep Learning Approach for Sugarcane Leaf Disease Identification
 
 An explainable deep learning framework for **accurate and interpretable sugarcane leaf disease classification** using EfficientNet-B0, MobileNetV2, and ResNet50, integrated with Grad-CAM visualizations and real-time deployment interfaces.
 
@@ -174,6 +174,66 @@ Model focuses on **disease-relevant regions** instead of background noise.
 | EfficientNet-B0 | **97.85%** | **97.84%** |
 | MobileNetV2 | 97.64% | 97.62% |
 | ResNet50 | 97.64% | 97.63% |
+
+---
+
+## Literature Comparison & Benchmarking
+
+To evaluate the effectiveness of the proposed approach, a comparative analysis was conducted against recent state-of-the-art studies in sugarcane leaf disease classification.
+
+### Comparative Performance
+
+| Study | Model(s) | Accuracy (%) | Precision (%) | Recall (%) | F1-score (%) |
+|------|----------|-------------|---------------|------------|--------------|
+| Kunduracıoğlu & Paçal (2024) | EfficientNet-B6 | 93.39 | - | - | - |
+|  | Inception V4 | 93.10 | - | - | - |
+| Paçal & Kunduracıoğlu (2024) | DeIT3-Small (ViT) | 93.79 | 91.27 | - | 90.96 |
+| Srinivasan et al. (2025) | EfficientNet-B7 | **99.79** | - | - | - |
+|  | DenseNet201 | 99.50 | - | - | - |
+| Tonmoy et al. (2025) | MobilePlantViT | 92.76 | - | - | - |
+| Richter & Kim (2025) | Avg. of 23 TL Models | 91.63 | - | - | 87.14 |
+| Qaadan et al. (2025) | Stacked Ensemble | 95.64 | - | - | 95.62 |
+| **Proposed Study** | EfficientNet-B0 | **97.85** | **97.94** | **97.85** | **97.84** |
+|  | MobileNetV2 | 97.64 | 97.72 | 97.64 | 97.62 |
+|  | ResNet50 | 97.64 | 97.73 | 97.64 | 97.63 |
+
+---
+
+### Key Insights
+
+- The proposed models achieve **comparable or superior performance** relative to most recent studies.
+- Unlike prior works that rely on **very deep architectures (EfficientNet-B7, DenseNet201)** or **complex ensembles**, this project uses **lightweight baseline models**.
+- Despite lower computational complexity, the models outperform:
+  - Vision Transformer-based approaches
+  - Ensemble-based methods
+  - Multiple transfer learning benchmarks
+- Only extremely large-scale architectures (e.g., EfficientNet-B7) achieve higher accuracy, but at significantly higher computational cost.
+
+---
+
+### Why This Matters
+
+The results demonstrate that:
+
+- **Model efficiency ≠ performance compromise**
+- Proper **data preprocessing, augmentation, and training strategies** can outperform heavier models
+- Lightweight architectures are more suitable for:
+  - Real-time deployment
+  - Edge devices
+  - Mobile-based agricultural solutions
+
+---
+
+### Conclusion from Benchmarking
+
+This study validates that an **XAI-driven, optimized deep learning pipeline** can deliver:
+
+- High accuracy (~97%+)
+- Strong generalization
+- Real-time feasibility
+- Interpretability via Grad-CAM
+
+making it highly practical for **precision agriculture and real-world deployment**.
 
 ---
 
